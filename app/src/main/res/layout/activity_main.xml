@@ -37,11 +37,12 @@
 
     <Button
         android:id="@+id/buttonData"
-        android:layout_width="150"
-        android:layout_height="55"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="120dp"
         android:background="#FF7A00"
+        android:onClick="onClicData"
         android:text="Data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,10 +51,11 @@
 
     <Button
         android:id="@+id/buttonCalendar"
-        android:layout_width="150"
-        android:layout_height="55"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
         android:layout_marginTop="30dp"
         android:background="#FF7A00"
+        android:onClick="onClickCalendar"
         android:text="Calendar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -32,14 +32,14 @@
 
         <EditText
             android:id="@+id/editText"
-            android:layout_width="250"
-            android:layout_height="50"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
             android:layout_marginTop="140dp"
             android:background="#FFFFFF"
             android:ems="10"
             android:hint="Цена, руб."
             android:inputType="numberDecimal"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"

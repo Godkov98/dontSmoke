@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.content.Intent;
 
 public class ActivityTwo extends AppCompatActivity {
 
@@ -27,9 +28,7 @@ public class ActivityTwo extends AppCompatActivity {
         SharedPreferences.Editor prefEditor = settings.edit();
         prefEditor.putFloat(PRICE_VALUE, Float.parseFloat(price));
         prefEditor.apply();
-    }
-    public void getPrice(View view)
-    {
-
+        Intent intent = (new Intent(ActivityTwo.this, MainActivity.class));
+        startActivity(intent);
     }
 }
