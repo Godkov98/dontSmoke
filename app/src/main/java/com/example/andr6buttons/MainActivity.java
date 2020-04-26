@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
         editor.putString(StorageObj, json);
         editor.commit();
     }
+    public void onClick_Statistic(View view)
+    {
+        Intent intent = new Intent(this, Statistic.class);
+        startActivity(intent);
+    }
 }

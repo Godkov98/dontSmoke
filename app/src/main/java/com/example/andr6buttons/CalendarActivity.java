@@ -42,7 +42,7 @@ public class CalendarActivity extends AppCompatActivity {
         }
         Date dateNow = new Date();
         SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
-        TextView smoked = (TextView)findViewById(R.id.edWasted);
+        TextView smoked = (TextView)findViewById(R.id.edSmoked);
         smoked.setText("Сегодня выкурено: " + String.valueOf(storage.GetToDateCount(format.format(dateNow))));
         TextView wasted = (TextView)findViewById(R.id.edWasted);
         wasted.setText("Сегодня потрачено: " + String.valueOf(storage.GetToDateCount(format.format(dateNow))*onePrice));
@@ -61,7 +61,7 @@ public class CalendarActivity extends AppCompatActivity {
                     Day = "0" + Day;
                 }
                 String date = Day + "." + Month + "." + Year;
-                TextView smoked = (TextView)findViewById(R.id.edWasted);
+                TextView smoked = (TextView)findViewById(R.id.edSmoked);
                 smoked.setText(date + " выкурено: " + String.valueOf(storage.GetToDateCount(date)));
                 settings2 = getSharedPreferences(PREFS_FILE2, MODE_PRIVATE);
                 float onePrice = settings2.getFloat(PRICE_VALUE, 0)/20;

@@ -32,7 +32,7 @@ public class Storage
         }
         return 0;
     }
-    public int getAllCount(String Date)
+    public int getAllCount()
     {
         int count = 0;
         for (int i = 0; i < dates.size(); i++)
