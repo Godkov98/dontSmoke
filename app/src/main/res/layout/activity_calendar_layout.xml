@@ -8,13 +8,17 @@
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="594dp"
+        android:layout_height="wrap_content"
         android:background="#FF7A00" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/edWasted"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:background="#FF7A00"
-        android:text="Statistics" />
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/edWasted"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
 </LinearLayout>

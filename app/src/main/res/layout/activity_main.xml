@@ -23,6 +23,7 @@
         android:layout_width="214dp"
         android:layout_height="196dp"
         android:background="#FF7A00"
+        android:onClick="onClick_SmokeBreak"
         android:text="smoke break"
         android:textColorLink="#D32F2F"
         android:textSize="18sp"
